@@ -125,11 +125,6 @@
 
         </plugins>
 
-        <pluginManagement>
-            <plugins>
-
-            </plugins>
-        </pluginManagement>
         <extensions>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
@@ -138,10 +133,7 @@
             </extension>
         </extensions>
     </build>
-    <dependencyManagement>
-        <dependencies>
-        </dependencies>
-    </dependencyManagement>
+    
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -162,7 +154,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    
     <modules>
         <module>gameoflife-build</module>
         <module>gameoflife-core</module>
@@ -174,8 +166,8 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-
         </profile>
+        
         <profile>
             <id>metrics</id>
             <build>
